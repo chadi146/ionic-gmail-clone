@@ -1,0 +1,51 @@
+:host {
+  ion-content {
+    --padding-top: 20px;
+
+    .search-overlay {
+      margin: 20px;
+      width: 90%;
+
+      ion-row {
+        box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 15%);
+        background: #fff;
+        border-radius: 8px;
+        ion-col {
+          &:last-child {
+            display: flex;
+          }
+        }
+      }
+
+      ion-avatar {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  ion-refresher {
+    margin-top: 120px;
+  }
+
+  ion-list {
+    margin-top: 80px;
+  }
+
+  ion-fab-button {
+    width: 140px;
+    height: 48px;
+    --border-radius: 20px;
+    --box-shadow: 5px 12px 30px -8px rgba(0, 0, 0, 0.53);
+
+    ion-icon {
+      font-size: 20px;
+    }
+
+    &::part(native) {
+      color: var(--ion-color-primary);
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}

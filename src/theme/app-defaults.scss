@@ -1,0 +1,12 @@
+.custom-popover {
+  --ion-backdrop-opacity: 0.6;
+
+  &::part(arrow) {
+    display: none;
+  }
+
+  &::part(content) {
+    left: 5px !important;
+    width: calc(100% - 10px);
+  }
+}

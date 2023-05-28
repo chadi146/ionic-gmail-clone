@@ -1,0 +1,14 @@
+# Ignore Angular build output
+/dist
+
+# Ignore Node.js modules
+/node_modules
+
+# Ignore TypeScript definition files
+**/*.d.ts
+
+# Ignore end-to-end and unit tests
+**/*.spec.ts
+
+# Ignore environment variable files
+/src/environments

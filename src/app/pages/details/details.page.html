@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        color="medium"
+        defaultHref="/tabs/mail"
+        text=""
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="archive-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="mail-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="data">
+    <ion-item lines="full">
+      <ion-label color="dark">{{ data.subject }}</ion-label>
+    </ion-item>
+
+    <div [innerHtml]="data.content" class="content"></div>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-button size="small" fill="outline" expand="block" color="medium">
+          <ion-icon name="return-up-back-outline" slot="start"></ion-icon>
+          Reply
+        </ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button size="small" fill="outline" expand="block" color="medium">
+          <ion-icon name="arrow-undo-outline" slot="start"></ion-icon>
+          Reply all
+        </ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button size="small" fill="outline" expand="block" color="medium">
+          <ion-icon name="return-up-forward-outline" slot="start"></ion-icon>
+          Forward
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,14 @@
+:host {
+  ion-content {
+    > div {
+      ion-item {
+        ion-label {
+          font-size: larger !important;
+        }
+      }
+      .content {
+        padding: 20px;
+      }
+    }
+  }
+}

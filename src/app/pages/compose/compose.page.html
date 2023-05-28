@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-button (click)="close()" color="medium">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="attach"></ion-icon>
+      </ion-button>
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="send"></ion-icon>
+      </ion-button>
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="full">
+    <ion-input placeholder="To"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-input placeholder="From"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-input placeholder="Subject"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-textarea placeholder="Compose email" rows="20"></ion-textarea>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ionic-gmail-clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

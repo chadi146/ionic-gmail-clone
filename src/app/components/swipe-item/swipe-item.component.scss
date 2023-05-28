@@ -1,0 +1,50 @@
+:host {
+  .wrapper {
+    background: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 89px;
+    position: absolute;
+    width: 100%;
+
+    .column {
+      display: flex;
+      flex: 1;
+      flex-basis: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .email {
+    height: 89px;
+    display: flex;
+    background: #fff;
+
+    .excerpt {
+      padding-top: 4px;
+    }
+
+    .date {
+      font-size: small;
+    }
+
+    .email-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #efefef;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+
+  .rounded {
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 0px 6px 13px -5px rgb(0 0 0 / 28%);
+  }
+}
